@@ -1,0 +1,23 @@
+[workspace]
+members = ["backend"]
+resolver = "2"
+
+[workspace.dependencies]
+actix-web = "4.4"
+actix-rt = "2.9"
+actix-cors = "0.7"
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+log = "0.4"
+env_logger = "0.11"
+ndarray = "0.15"
+ndarray-stats = "0.15"
+rand = "0.8"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "1.0"
+anyhow = "1.0"
+lazy_static = "1.4"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+dotenv = "0.15"
